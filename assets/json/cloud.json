@@ -3,21 +3,28 @@
     {
       "title": "Human Management",
       "name": "HM, HMS",
-      "html_entity": "&#128701;",
-      "keywords": "hms",
+      "html_entity": "&#9881;",
       "url": "https://hms.aleptra.com"
     },
     {
       "title": "Human Resource Management",
       "name": "HRM, HRMS",
-      "html_entity": "&#128701;",
+      "html_entity": "&#9881;",
       "url": "https://hrms.aleptra.com"
     },
     {
       "title": "Human Identity Management",
       "name": "HIM, HIMS, HidMS, HidM",
-      "html_entity": "&#128701;",
+      "html_entity": "&#9881;",
       "url": "https://hidms.aleptra.com"
+    }
+  ],
+  "platforms": [
+    {
+      "title": "No-code development",
+      "name": "NCDP",
+      "html_entity": "&#129695",
+      "url": "https://ncdp.aleptra.com"
     }
   ],
   "applications": [
