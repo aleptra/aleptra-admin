@@ -11,7 +11,13 @@
       "title": "Human Resource Management",
       "name": "HRM, HRMS",
       "html_entity": "&#128701;",
-      "keywords": "dollar, money, cash"
+      "url": "https://hrms.aleptra.com"
+    },
+    {
+      "title": "Human Identity Management",
+      "name": "HIM, HIMS, HidMS, HidM",
+      "html_entity": "&#128701;",
+      "url": "https://hidms.aleptra.com"
     }
   ],
   "applications": [
