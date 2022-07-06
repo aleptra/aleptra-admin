@@ -1,0 +1,14 @@
+{
+  "name": "English",
+  "code": "eng",
+  "direction": "ltr",
+  "translations": {
+    "filter": "Filter",
+    "identity": "Identity",
+    "logout": "Logout",
+    "human": "Human",
+    "humans": "Humans",
+    "search": "Search",
+    "title": "Human Management System"
+  }
+}

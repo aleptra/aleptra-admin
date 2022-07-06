@@ -1,0 +1,35 @@
+<script src="https://cdn.front.nu/dist/front.js" template="index"></script>
+<template>
+  <aside index="0"></aside>
+  <aside index="1"></aside>
+</template>
+
+<section class="pauto" storage="api">
+
+  <article>
+    <h5 globalize="system">System</h5>
+    <div class="box cards xxs_gtc1 xs_gtc2 sm_gtc3 xl_gtc4 xxl_gtc5 xxxl_gtc6 mt1 gut2- br05- bcwhite- border- tac"
+      json="true" iterate="systems" datasource="assets/json/systems.json" filter="true" preloader="true">
+      <a jsonget="url" target="_blank" filteron="{{ jsonget:title }} {{ jsonget:name }}">
+        <figure class="p1">
+          <i class="icon48" jsonget="html_entity"></i>
+          <figcaption class="fwb z08 md_dn" jsonget="title"></figcaption>
+          <small class="md_dn" jsonget="name" slice="0,20"></small>
+        </figure>
+      </a>
+    </div>
+    <hr>
+    <h5 globalize="application">Application</h5>
+    <div class="box cards xxs_gtc1 xs_gtc2 sm_gtc3 xl_gtc4 xxl_gtc5 xxxl_gtc6 mt1 gut2- br05- bcwhite- border- tac"
+      json="true" iterate="applications" datasource="assets/json/systems.json" filter="true" preloader="true">
+      <a jsonget="url" target="_blank" filteron="{{ jsonget:title }} {{ jsonget:name }}">
+        <figure class="p1">
+          <img jsonget="iconUrl" class="w5r">
+          <figcaption class="fwb z08 md_dn" jsonget="title"></figcaption>
+          <small class="md_dn" jsonget="name" slice="0,20"></small>
+        </figure>
+      </a>
+    </div>
+  </article>
+
+</section>

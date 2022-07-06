@@ -1,0 +1,25 @@
+{
+  "systems": [
+    {
+      "title": "Human Management",
+      "name": "HM, HMS",
+      "html_entity": "&#128701;",
+      "keywords": "hms",
+      "url": "https://hms.aleptra.com"
+    },
+    {
+      "title": "Human Resource Management",
+      "name": "HRM, HRMS",
+      "html_entity": "&#128701;",
+      "keywords": "dollar, money, cash"
+    }
+  ],
+  "applications": [
+    {
+      "title": "Note",
+      "name": "HM, HMS",
+      "iconUrl": "https://note.aleptra.com/assets/img/icon.svg",
+      "url": "https://note.aleptra.com"
+    }
+  ]
+}

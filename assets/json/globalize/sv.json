@@ -1,0 +1,14 @@
+{
+  "name": "Svenska",
+  "code": "swe",
+  "direction": "ltr",
+  "translations": {
+    "filter": "Filtrera",
+    "identity": "Identitet",
+    "logout": "Logga ut",
+    "person": "Människa",
+    "persons": "Människor",
+    "search": "Sök",
+    "title": "Människohanteringssystem"
+  }
+}
