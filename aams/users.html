@@ -18,10 +18,10 @@
 <div id="users" class="box cards shade1 list br0- bcwhite-" bindasset="token:api.auth.token"
   data-src="https://api.aleptra.com/entity/?table=private.auth" data-header="Authorization:Bearer {token}"
   data-loader="#loader" data-onempty="#empty" data-onerror="show:#error" data-iterate="true">
-  <a data-get="[*];id:[*]" href="user.html?i={id}" class="p1">
+  <a href="user.html?i={id}" padding="1rem">
     <figure class="df aic gap1-">
-      <p data-get="name"></p>
-      <small class="dimgray" data-get="email"></small>
+      <p data-get="email"></p>
+      <small class="dimgray" data-get="role"></small>
     </figure>
   </a>
 </div>
