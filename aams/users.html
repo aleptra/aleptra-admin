@@ -1,0 +1,29 @@
+<script src="https://cdn.front.nu/nightly/front.js"></script>
+<title>Users</title>
+<template srcdoc="../index" src="../templates/main"></template>
+<div class="df aic">
+  <h1 class="f1" globalize-get>Users</h1>
+  <button class="button round br50 w2r h2r fr bcblack white aic bs1"><i class="icon16">&#8854;</i></button>
+</div>
+<hr class="bcblack01 mt1">
+<div class="df mb1 gap1-">
+  <input id="query" type="text" value="" class="bs1 f3 p1 h3 br05" placeholder="Search users..." autocomplete="off">
+  <select id="sort" class="bs1 f0 p1 h3 br05 fs08">
+    <option>Updated</option>
+    <option>Name</option>
+    <option>Created</option>
+  </select>
+</div>
+<div id="loader" class="loader"></div>
+<div id="users" class="box cards shade1 list br0- bcwhite-" bindasset="token:api.auth.token"
+  data-src="https://api.aleptra.com/entity/?table=private.auth" data-header="Authorization:Bearer {token}"
+  data-loader="#loader" data-onempty="#empty" data-onerror="show:#error" data-iterate="true">
+  <a data-get="[*];id:[*]" href="user.html?i={id}" class="p1">
+    <figure class="df aic gap1-">
+      <p data-get="name"></p>
+      <small class="dimgray" data-get="email"></small>
+    </figure>
+  </a>
+</div>
+<p id="empty" hide padding="1rem" color="dimgray">No users found.</p>
+<p id="error" hide padding="1rem" color="red" onshow="hide:#empty;hide:#users">Error loading users.</p>

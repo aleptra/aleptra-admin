@@ -1,0 +1,7 @@
+{
+  "auth": {
+    "endpoint": "https://api.aleptra.com/entity",
+    "api_key": "",
+    "token": ""
+  }
+}

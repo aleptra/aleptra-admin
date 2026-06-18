@@ -1,0 +1,24 @@
+{
+  "name": "English",
+  "code": "eng",
+  "direction": "ltr",
+  "translations": {
+    "app": {
+      "name": "Authentication & Authorization Management System",
+      "acronym": "AAMS"
+    },
+    "Change language": "Change language",
+    "Identity": "Identity",
+    "Users": "Users",
+    "Groups": "Groups",
+    "Access Control": "Access Control",
+    "Roles": "Roles",
+    "Permissions": "Permissions",
+    "API Keys": "API Keys",
+    "Monitoring": "Monitoring",
+    "Sessions": "Sessions",
+    "Policies": "Policies",
+    "Audit Log": "Audit Log",
+    "Continue": "Continue"
+  }
+}

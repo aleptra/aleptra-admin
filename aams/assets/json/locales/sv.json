@@ -1,0 +1,24 @@
+{
+  "name": "Svenska",
+  "code": "swe",
+  "direction": "ltr",
+  "translations": {
+    "app": {
+      "name": "Autentisering & Auktoriseringshanteringssystem",
+      "acronym": "AAMS"
+    },
+    "Change language": "Byt språk",
+    "Identity": "Identitet",
+    "Users": "Användare",
+    "Groups": "Grupper",
+    "Access Control": "Åtkomstkontroll",
+    "Roles": "Roller",
+    "Permissions": "Behörigheter",
+    "API Keys": "API-nycklar",
+    "Monitoring": "Övervakning",
+    "Sessions": "Sessioner",
+    "Policies": "Policyer",
+    "Audit Log": "Revisionslogg",
+    "Continue": "Fortsätt"
+  }
+}
