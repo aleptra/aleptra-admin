@@ -7,7 +7,7 @@
   <script src="https://cdn.front.nu/nightly/front.js" module="globalize;data;navigate;keyboard" var="api"
     conf="debug:false;debugLocalhost:true;varsDir:assets/json/vars;storageKey:aams"
     globalize-conf="folder:assets/json/locales"
-    navigate-conf="startpage:experimental/system/aams;startpageLocal:system/aams">
+    navigate-conf="startpage:experimental/system/aams;startpageLocal:system/aams;error:show:#notfound;success:hide:#notfound"></script>
     </script>
   <link type="text/css" href="https://cdn.front.nu/dist/front.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/app.css">
@@ -18,6 +18,11 @@
 <body bgcolor="white">
   <div id="navloader" class="navloader pa t0 w100 bcblack03 h2px" hide>
     <div class="bcblack08"></div>
+  </div>
+  <div id="notfound" flex flexdirection="column" color="red" hide absolute top="0" left="0" height="100%" width="100%"
+    bgcolor="white" alignitems="center" justifycontent="center" zindex="100">
+    <h1>404 Error</h1>
+    <a click="navigate-back">Go back</a>
   </div>
   <header></header>
   <aside ontoggle="toggle.class[pf t0 h100p zi50]" class="dark xl_dn shade2" resize="horizontal"></aside>
