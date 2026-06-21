@@ -55,3 +55,7 @@
 body [class*='icon'] {
   font-family: material;
 }
+
+input::placeholder {
+  color: var(--placeholder-color, gray);
+}

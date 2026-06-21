@@ -19,6 +19,9 @@
     "Sessions": "Sessioner",
     "Policies": "Policyer",
     "Audit Log": "Revisionslogg",
+    "Reset password": "Återställ lösenord",
+    "Suspend": "Stäng av",
+    "Delete": "Ta bort",
     "Continue": "Fortsätt"
   }
 }

@@ -6,24 +6,41 @@
   <button class="button round br50 w2r h2r fr bcblack white aic bs1"><i class="icon16">&#8854;</i></button>
 </div>
 <hr class="bcblack01 mt1">
-<div class="df mb1 gap1-">
-  <input id="query" type="text" value="" class="bs1 f3 p1 h3 br05" placeholder="Search users..." autocomplete="off">
+<div class="df mb05 gap1- aic">
+  <input id="query" type="text" class="bs1 f3 p1 h3 br05" placeholder="Search users..." placeholdercolor="silver"
+    autocomplete="off">
   <select id="sort" class="bs1 f0 p1 h3 br05 fs08">
-    <option>Updated</option>
-    <option>Name</option>
-    <option>Created</option>
+    <option value="" selected disabled globalize-get>Sort by</option>
+    <option value="created_at" globalize-get>Created</option>
+    <option value="email" globalize-get>Email</option>
+    <option value="role" globalize-get>Role</option>
   </select>
 </div>
+<div class="df mb1 gap05- fww">
+  <button class="tag br1 p05 pl1 pr1 fs08 bcblack white" globalize-get>All</button>
+  <button class="tag br1 p05 pl1 pr1 fs08 bcwhitesmoke" globalize-get>Viewer</button>
+  <button class="tag br1 p05 pl1 pr1 fs08 bcwhitesmoke" globalize-get>Owner</button>
+  <button class="tag br1 p05 pl1 pr1 fs08 bcwhitesmoke" globalize-get>Admin</button>
+  <button class="tag br1 p05 pl1 pr1 fs08 bcwhitesmoke" globalize-get>Service</button>
+</div>
 <div id="loader" class="loader"></div>
-<div id="users" class="box cards shade1 list br0- bcwhite-" bindasset="token:api.auth.token"
+<div id="users" class="shade1 br0- bcwhite-" bindasset="token:api.auth.token"
   data-src="https://api.aleptra.com/entity/?table=private.auth" data-header="Authorization:Bearer {token}"
   data-loader="#loader" data-onempty="#empty" data-onerror="show:#error" data-iterate="true">
-  <a href="user.html?i={id}" padding="1rem">
-    <figure class="df aic gap1-">
+  <div class="df aic" flex flexdirection="row" padding="1rem">
+    <a href="user.html?i={id}" class="f1">
       <p data-get="email"></p>
       <small class="dimgray" data-get="role"></small>
-    </figure>
-  </a>
+    </a>
+    <details class="pr" flex="none">
+      <summary class="button p05 br50 hover-"><i class="icon16">⋮</i></summary>
+      <div class="pa r0 bcwhite bs1 br05 zi50" padding="0.5rem" minwidth="10rem">
+        <a href="#" class="p05 db hover-" globalize-get>Reset password</a>
+        <a href="#" class="p05 db hover-" globalize-get>Suspend</a>
+        <a href="#" class="p05 db hover- red" globalize-get>Delete</a>
+      </div>
+    </details>
+  </div>
 </div>
 <p id="empty" hide padding="1rem" color="dimgray">No users found.</p>
 <p id="error" hide padding="1rem" color="red" onshow="hide:#empty;hide:#users">Error loading users.</p>

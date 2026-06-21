@@ -19,6 +19,9 @@
     "Sessions": "Sessions",
     "Policies": "Policies",
     "Audit Log": "Audit Log",
+    "Reset password": "Reset password",
+    "Suspend": "Suspend",
+    "Delete": "Delete",
     "Continue": "Continue"
   }
 }
