@@ -1,7 +1,6 @@
 {
   "auth": {
     "endpoint": "https://api.aleptra.com/entity",
-    "api_key": "",
-    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiIDogMSwgImVudGl0eV9pZCIgOiAiMDAwMDAwMDAtMDAwMC0wMDAwLTAwMDAtMDAwMDAwMDAwMDAyIiwgInR5cGUiIDogImh1bWFuIiwgImVtYWlsIiA6ICJqb3NlZi5nYWJyaWVsc3NvbkBvdXRsb29rLmNvbSIsICJyb2xlIiA6ICJvd25lciIsICJzY29wZXMiIDogWyJlbnRpdHk6KiIsICJyZWxhdGlvbjoqIiwgImxleGljb246KiIsICJwbGFjZToqIiwgImV2ZW50OioiLCAibWVhc3VyZToqIiwgImNvbmNlcHQ6KiIsICJzdWJzdGFuY2U6KiIsICJwcm9jZXNzOioiLCAidGF4b25vbXk6KiIsICJ3b3JrOioiXSwgImV4cCIgOiAxNzgyMzg4MTc5fQ.PlGMh291hg35BaRXjS1oyKY7qtiTZnhnWWp-Sb7sE2o"
+    "api_key": ""
   }
 }
