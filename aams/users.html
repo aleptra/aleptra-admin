@@ -24,9 +24,14 @@
   <button class="tag br1 p05 pl1 pr1 fs08 bcwhitesmoke" globalize-get>Service</button>
 </div>
 <div id="loader" class="loader"></div>
-<div id="users" class="shade1 br0- bcwhite-" storage-bindlocal="auth"
-  data-src="https://api.aleptra.com/entity/?table=private.auth" data-header="Authorization:Bearer {auth}"
-  data-loader="#loader" data-onempty="#empty" data-onerror="show:#error" data-iterate="true">
+<div id="users" class="shade1 br0- bcwhite-"
+  storage-bindlocal="auth" bindasset="endpoint:api.endpoint.users"
+  data-src="{endpoint}"
+  data-header="Authorization:Bearer {auth}"
+  data-loader="#loader"
+  data-onempty="#empty"
+  data-onerror="show:#error"
+  data-iterate="true">
   <div class="df aic" flex flexdirection="row" padding="1rem">
     <a href="user.html?i={id}" class="f1">
       <p data-get="email"></p>

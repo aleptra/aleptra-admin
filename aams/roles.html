@@ -1,3 +1,64 @@
 <script src="https://cdn.front.nu/nightly/front.js"></script>
 <title>Roles</title>
 <template srcdoc="../index" src="../templates/main"></template>
+
+<div class="df aic">
+  <h1 class="f1" globalize-get>Roles</h1>
+</div>
+
+<hr class="bcblack01 mt1">
+
+<p color="dimgray" marginbottom="2rem">
+  Roles are built into the system and cannot be created, renamed, or deleted.
+  Assign roles from the <a href="users.html">Users</a> page.
+</p>
+
+<div class="shade1 bcwhite">
+
+  <div flex padding="1rem" alignitems="center">
+    <div class="f1">
+      <strong>Owner</strong>
+      <p color="dimgray" fontsize="80%">
+        Full administrative access to the system.
+      </p>
+    </div>
+    <span bgcolor="black" color="white" radius="1rem" padding="0 1rem">owner</span>
+  </div>
+
+  <hr class="bcblack01">
+
+  <div flex padding="1rem" alignitems="center">
+    <div class="f1">
+      <strong>Admin</strong>
+      <p color="dimgray" fontsize="80%">
+        Administrative access without owner privileges.
+      </p>
+    </div>
+    <span bgcolor="whitesmoke" radius="1rem" padding="0 1rem">admin</span>
+  </div>
+
+  <hr class="bcblack01">
+
+  <div flex padding="1rem" alignitems="center">
+    <div class="f1">
+      <strong>Viewer</strong>
+      <p color="dimgray" fontsize="80%">
+        Read-only access.
+      </p>
+    </div>
+    <span bgcolor="whitesmoke" radius="1rem" padding="0 1rem">viewer</span>
+  </div>
+
+  <hr class="bcblack01">
+
+  <div flex padding="1rem" alignitems="center">
+    <div class="f1">
+      <strong>Service</strong>
+      <p color="dimgray" fontsize="80%">
+        Used by server-to-server integrations and API keys.
+      </p>
+    </div>
+    <span bgcolor="whitesmoke" radius="1rem" padding="0 1rem">service</span>
+  </div>
+
+</div>
