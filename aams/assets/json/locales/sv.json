@@ -7,8 +7,9 @@
       "name": "Autentisering & Auktoriseringshanteringssystem",
       "acronym": "AAMS"
     },
-    "Change language": "Byt språk",
+    "Select tenant": "Välj klient",
     "Identity": "Identitet",
+    "Tenants": "Klienter",
     "Users": "Användare",
     "Groups": "Grupper",
     "Access Control": "Åtkomstkontroll",
@@ -21,7 +22,18 @@
     "Audit Log": "Revisionslogg",
     "Reset password": "Återställ lösenord",
     "Suspend": "Stäng av",
+    "Edit": "Redigera",
     "Delete": "Ta bort",
+    "Name": "Namn",
+    "Sort by": "Sortera efter",
+    "Created": "Skapad",
+    "Email": "E-post",
+    "Role": "Roll",
+    "All": "Alla",
+    "Viewer": "Visare",
+    "Owner": "Ägare",
+    "Admin": "Administratör",
+    "Service": "Tjänst",
     "Continue": "Fortsätt"
   }
 }

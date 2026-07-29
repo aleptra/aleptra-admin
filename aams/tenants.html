@@ -1,0 +1,42 @@
+<script src="https://cdn.front.nu/nightly/front.js"></script>
+<title>Tenants</title>
+<template srcdoc="../index" src="../templates/main"></template>
+<div class="df aic">
+  <h1 class="f1" globalize-get>Tenants</h1>
+  <button class="button round br50 w2r h2r fr bcblack white aic bs1"><i class="icon16">&#8854;</i></button>
+</div>
+<hr class="bcblack01 mt1">
+<div class="df mb05 gap1- aic">
+  <input id="query" type="text" class="bs1 f3 p1 h3 br05" placeholder="Search tenants..." placeholdercolor="silver"
+    autocomplete="off">
+  <select id="sort" class="bs1 f0 p1 h3 br05 fs08">
+    <option value="" selected disabled globalize-get>Sort by</option>
+    <option value="created_at" globalize-get>Created</option>
+    <option value="name" globalize-get>Name</option>
+  </select>
+</div>
+<div id="loader" class="loader"></div>
+<div id="tenants" class="shade1 br0- bcwhite-"
+  storage-bindlocal="auth" bindasset="endpoint:api.endpoint.tenants"
+  data-src="{endpoint}"
+  data-header="Authorization:Bearer {auth}"
+  data-loader="#loader"
+  data-onempty="#empty"
+  data-onerror="show:#error"
+  data-iterate="true">
+  <div class="df aic" flex flexdirection="row" padding="1rem">
+    <a href="tenant.html?i={id}" class="f1">
+      <p data-get="name"></p>
+      <small class="dimgray" data-get="domain"></small>
+    </a>
+    <details class="pr" flex="none">
+      <summary class="button p05 br50 hover-"><i class="icon16">⋮</i></summary>
+      <div class="pa r0 bcwhite bs1 br05 zi50" padding="0.5rem" minwidth="10rem">
+        <a href="#" class="p05 db hover-" globalize-get>Edit</a>
+        <a href="#" class="p05 db hover- red" globalize-get>Delete</a>
+      </div>
+    </details>
+  </div>
+</div>
+<p id="empty" hide padding="1rem" color="dimgray">No tenants found.</p>
+<p id="error" hide padding="1rem" color="red" onshow="hide:#empty;hide:#tenants">Error loading tenants.</p>

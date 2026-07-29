@@ -1,6 +1,7 @@
 {
   "origin": "https://api.aleptra.com",
   "endpoint": {
-    "users": "{origin}/entity/?table=private.auth"
+    "users": "{origin}/entity/?table=private.auth",
+    "tenants": "{origin}/entity/?table=private.tenants"
   }
 }

@@ -7,8 +7,9 @@
       "name": "Authentication & Authorization Management System",
       "acronym": "AAMS"
     },
-    "Change language": "Change language",
+    "Select tenant": "Select tenant",
     "Identity": "Identity",
+    "Tenants": "Tenants",
     "Users": "Users",
     "Groups": "Groups",
     "Access Control": "Access Control",
@@ -21,7 +22,18 @@
     "Audit Log": "Audit Log",
     "Reset password": "Reset password",
     "Suspend": "Suspend",
+    "Edit": "Edit",
     "Delete": "Delete",
+    "Name": "Name",
+    "Sort by": "Sort by",
+    "Created": "Created",
+    "Email": "Email",
+    "Role": "Role",
+    "All": "All",
+    "Viewer": "Viewer",
+    "Owner": "Owner",
+    "Admin": "Admin",
+    "Service": "Service",
     "Continue": "Continue"
   }
 }

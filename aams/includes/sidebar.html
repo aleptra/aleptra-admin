@@ -4,30 +4,24 @@
       <a click="toggle" keyboard-key="m" keyboard-action="click" keyboard-scope="body" clicktargetfield="aside[0]"
         class="button pl1"><i class="icon32">&#171;</i></a>
       <hr>
-      <input id="query2" class="bs1 p1 h3 bcblack w100" bindvar="link" type="text" placeholder="Search..."
-        autocomplete="off">
     </div>
-    <select name="language" class="p1 h3 mb1 shade1 fs08" onvaluechange="globalize-set">
-      <option selected disabled globalize-get>Change language</option>
-      <option value="sv">Svenska</option>
-      <option value="en">English (US)</option>
+    <select name="tenant" padding="1rem 1.5rem" lineheight="inherit" height="3rem" marginbottom="0.75rem" class="shade1" fontsize="85%">
+      <option selected disabled globalize-get>Select tenant</option>
     </select>
 
     <section>
       <details open>
-        <summary globalize-get bold>Identity</summary>
+        <summary globalize-get bold>Manage</summary>
+        <a href="tenants.html" class="p1" globalize-get>Tenants</a>
         <a href="users.html" class="p1" globalize-get>Users</a>
         <a href="groups.html" class="p1" globalize-get>Groups</a>
-      </details>
-      <details open>
-        <summary globalize-get bold>Access Control</summary>
         <a href="roles.html" class="p1" globalize-get>Roles</a>
         <a href="permissions.html" class="p1" globalize-get>Permissions</a>
         <a href="keys.html" class="p1" globalize-get>API Keys</a>
         <a href="policies.html" class="p1" globalize-get>Policies</a>
       </details>
       <details open>
-        <summary globalize-get bold>Monitoring</summary>
+        <summary globalize-get bold>Monitor</summary>
         <a href="sessions.html" class="p1" globalize-get>Sessions</a>
         <a href="audit.html" class="p1" globalize-get>Audit Log</a>
       </details>
