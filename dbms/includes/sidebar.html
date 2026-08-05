@@ -7,29 +7,20 @@
       <input id="query2" class="bs1 p1 h3 bcblack w100" bindvar="link" type="text" placeholder="Search for {link} ..."
         autocomplete="off">
     </div>
-    <select name="language" class="p1 h3 mb1 shade1 fs08" onvaluechange="globalize-set">
-      <option selected disabled globalize-get>Change language</option>
-      <option value="sv">Svenska</option>
-      <option value="en">English (US)</option>
-      <option value="arc">𐡀𐡓𐡌𐡉𐡀</option>
-      <option value="syc">ܐܪܡܝܐ</option>
-      <option value="am">አማርኛ</option>
+    <select name="db" class="p1 h3 mb1 shade1 fs08" onvaluechange="globalize-set">
+      <option selected disabled globalize-get>Choose server</option>
+      <option value="sv">localhost</option>
     </select>
 
-    <section iterate="1;2;i">
+    <section data-src="https://api.aleptra.com"
+      data-iterate="databases">
       <details>
-        <summary>Database ({i})</summary>
-        <details
-          bindasset="apikey:api.databases.x{i}.api_key;x:api.databases.x{i}.endpoint"
-          data-src="{x}"
-          data-header="apikey:{apikey}"
-          data-iterate="definitions"
-          data-onempty="#error{i}"
-          open>
-          <summary class="fwb" data-iterate-skip globalize-get>Tables</summary>
-          <a data-get="[*];id:[*]" href="table.html?i={id}" class="p1"></a>
-          <a id="error{i}" hide>No tables!</a>
-        </details>
+        <summary data-get="name"></summary>
+        <nav
+          data-iterate="tables"
+          >
+          <a href="table.html?i={id}" data-get="name">ss</a>
+        </nav>
       </details>
     </section>
   </form>
