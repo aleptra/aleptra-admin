@@ -12,14 +12,11 @@
       <option value="sv">localhost</option>
     </select>
 
-    <section data-src="https://api.aleptra.com"
-      data-iterate="databases">
+    <section data-src="https://api.aleptra.com" data-iterate="databases">
       <details>
         <summary data-get="name"></summary>
-        <nav
-          data-iterate="tables"
-          >
-          <a data-get="name" data-set="name:name" href="table.html?i={name}" target="main">{name}</a>
+        <nav data-iterate="tables">
+          <a data-get="name" data-set="name:name" href="table.html?i={name}" target="main"></a>
         </nav>
       </details>
     </section>

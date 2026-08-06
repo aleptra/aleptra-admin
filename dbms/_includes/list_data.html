@@ -7,14 +7,16 @@
   bindquery="q:q;c:category"
   bindglobal="l:globalize.code"
   ifbeforeend="{c};data-src:&or=(id.eq.{c},taxonomy.eq.{c})"
-  data-src="{src}?isSign=eq.false&limit=1"
+  data-src="{src}"
   data-header="apikey:{apikey};Prefer:count=exact"
   data-loader="#loader"
   data-onempty="#empty"
-  data-iterate="true">
+  data-iterate="columns"
+  flex
+  flexdirection="row">
   <a bindvar="field" data-set="i:id" href="{field}.html?i={i}" class="p1">
     <figure class="pr">
-      <p bindvar="field:isLocalNetwork" bindglobal="l:globalize.code" data-get="{field}.{l:eng}"></p>
+      <p bindvar="field:isLocalNetwork" bindglobal="l:globalize.code" data-get="column_name"></p>
     </figure>
   </a>
 </div>
