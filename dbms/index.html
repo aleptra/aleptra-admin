@@ -4,11 +4,11 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="version" content="1.0.0">
-  <script src="https://cdn.front.nu/nightly/front.js" module="globalize;data;navigate;keyboard" var="api"
+  <script src="https://cdn.front.nu/nightly/front.js" module="globalize;data;navigate;keyboard;storage" var="api"
     conf="debug:false;debugLocalhost:true;varsDir:assets/json/vars;storageKey:dbms"
     globalize-conf="folder:assets/json/locales"
-    navigate-conf="startpage:experimental/system/dbms;startpageLocal:system/dbms">
-    </script>
+    navigate-conf="startpage:experimental/system/dbms;startpageLocal:system/dbms;error:show:#notfound;success:hide:#notfound"></script>
+  </script>
   <link type="text/css" href="https://cdn.front.nu/dist/front.css" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/app.css">
   <link rel="icon" href="data:,">
@@ -19,19 +19,21 @@
   <div id="navloader" class="navloader pa t0 w100 bcblack03 h2px" hide>
     <div class="bcblack08"></div>
   </div>
+  <div id="notfound" flex flexdirection="column" color="red" hide absolute top="0" left="0" height="100%" width="100%"
+    bgcolor="white" alignitems="center" justifycontent="center" zindex="100">
+    <h1>404 Error</h1>
+    <a click="navigate-back">Go back</a>
+  </div>
   <header></header>
   <aside ontoggle="toggle.class[pf t0 h100p zi50]" class="dark xl_dn shade2" resize="horizontal"></aside>
-  <main bgcolor="white" justifycontent="center" flex>
-    <article padding="1rem" class="df fdc wc_xm">
-      <section width="100%" align="center">
-        <div>
-          <img class="w10r mb05 hue-rotate m0a" src="https://www.aleptra.com/assets/img/logo_black.png">
-          <h6 class="z09 dimgray" globalize-get="app.name"></h6>
-        </div>
-        <a href="home.html" margintop="1rem" padding="0 2rem" lineheight="2.75" bold
-          class="br2 shade1 dark white button" globalize-get>Continue</a>
-
-      </section>
+  <main bgcolor="transparent" flex>
+    <article flex flexdirection="column" height="100%" padding="1rem" align="center" justifycontent="center">
+      <div marginbottom="1rem">
+        <img class="w10r mb05 hue-rotate m0a" src="https://www.aleptra.com/assets/img/logo_black.png">
+        <h6 class="z09 dimgray" globalize-get="app.name"></h6>
+      </div>
+      <a display="block" href="home.html" maxwidth="10rem" margin="0 auto" padding="0 2rem" lineheight="2.75" bold
+        color="white" class="br2 shade1 dark button tac" globalize-get>Continue</a>
     </article>
   </main>
   <aside></aside>
