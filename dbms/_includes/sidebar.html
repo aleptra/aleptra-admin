@@ -16,7 +16,7 @@
       <details>
         <summary data-get="name"></summary>
         <nav data-iterate="tables">
-          <a data-get="name" data-set="name:name" href="table.html?i={name}" target="main"></a>
+          <a data-get="name" data-set="name:name;db:^.name" href="table.html?db={db}&i={name}" target="main"></a>
         </nav>
       </details>
     </section>

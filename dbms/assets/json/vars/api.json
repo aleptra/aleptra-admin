@@ -1,5 +1,9 @@
 {
+  "origin": "https://api.aleptra.com",
   "schema": {
-    "endpoint": "https://api.aleptra.com/humanology/?schema=human_script_character"
+    "endpoint": "{origin}/{db}/?schema="
+  },
+  "table": {
+    "endpoint": "{origin}/{db}/?table="
   }
 }
